@@ -9,8 +9,8 @@ This repository uses the 'urllib' libraries so as to be compatible with out-of-t
 ## Instructions
 
 1. Download the RESTCrawler ZIP file.
-2. Open getServices.py and edit the *tokenURL*, *restURL*, *username*, and *password* parameters to server the environment you wish to crawl.
-3. Edit the *serviceList* to reflect which protocol the paths should be returned in (SOAP or REST). If you do not wish to use a token, use "" instead of token.
+2. Open getServices.py and edit the *restURL* and *protocol* parameters as desired (*protocol* can be "SOAP" or "REST").
+3. If you wish to use a token, set *getToken* to True,  and specify the appropriate *tokenURL*,*username*, and *password* values.
 4. Save getServices.py and execute it. The included services.txt file will be updated with all of the services available at the specified REST endpoint.
 
 ## Requirements
